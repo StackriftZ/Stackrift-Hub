@@ -96,3 +96,6 @@ local Quests = {
 	UpperSkyland2 = CFrame.new(-7902, 5636, -1411),
 	Fountain = CFrame.new(5256, 38, 4048)
 }
+
+return FarmIslands
+return Quests
