@@ -72,4 +72,6 @@ do
 	end
 end
 
+FastAttack:BladeHits()
+
 return FastAttack
