@@ -1,0 +1,20 @@
+local module = {}
+
+function module.RJS()
+	local GuiService = game:GetService("GuiService")
+	local TeleportService = game:GetService("TeleportService")
+	local Players = game:GetService("Players")
+
+	local player = Players.LocalPlayer
+	local placeId = game.PlaceId
+
+	for _, v in ipairs(game.Players:GetChildren()) do
+		task.spawn(function()
+			GuiService.MenuOpened:Connect(function()
+				TeleportService:Teleport(placeId, player)
+			end)
+		end)
+	end
+end
+
+return module
